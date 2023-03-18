@@ -1,0 +1,59 @@
+@mixin size($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+    }
+
+form {
+    margin: 50px;
+    margin-top: 20px;
+    color: rgb(7, 7, 7);
+
+    legend {
+        background-color: rgb(225, 222, 222);
+        text-align: center;
+        width: 90%;
+    }
+
+
+    .datosPersonales {
+        display: grid;
+        grid-template-rows: 40px 45px 45px 45px 45px;
+        column-gap: 20px;
+    }
+
+    .preferencias {
+        display: grid;
+        grid-template-rows: 45px 45px;
+        column-gap: 20px;
+
+        .tituloMañana {
+            margin: 10px;
+        }
+
+        .tituloTarde {
+            margin: 10px;
+        }
+    }
+
+    .informacionMedica {
+        display: grid;
+        grid-template-rows: 45px 45px 45px 45px 45px;
+        column-gap: 20px;
+
+        .textInfoMedica {
+            @include size (30%, 20px);
+            transition: all 2s;
+
+            &:focus {
+                width: 80%;
+                height: 30px;
+                background-color: rgb(199, 192, 192);
+            }
+        }
+    }
+
+
+
+
+
+}

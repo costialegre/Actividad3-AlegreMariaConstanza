@@ -1,0 +1,73 @@
+@mixin size($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.footer {
+    @include size (100%, 100px);
+    background-color: $color-medio;
+    margin-top: 10px;
+
+    .contenidoFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: x-small;
+        padding-top: 10px;
+
+        .tituloRedes {
+            margin-bottom: 0;
+        }
+
+        .logos {
+            display: grid;
+            grid-template-columns: 50px 50px 50px;
+            row-gap: 5px;
+            margin-left: 50px;
+
+            .instagram {
+                @include size (30px, 30px);
+                transition: 2s;
+
+                &:hover {
+                    transform: scale(2, 2);
+                }
+            }
+
+            .Facebook {
+                @extend .instagram
+            }
+
+            .Twitter {
+                @extend .instagram
+            }
+        }
+
+        .direccion {
+            display: grid;
+            grid-template-rows: 15px 15px 15px;
+            row-gap: 5px;
+
+            .mapa {
+                @include size (25px, 25px);
+                transition: 2s;
+
+                &:hover {
+                    transform: scale(6, 6);
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .contenidoFooter {
+        grid-template-columns: none;
+        row-gap: 30px;
+    }
+
+    .footer {
+        height: auto;
+    }
+}
