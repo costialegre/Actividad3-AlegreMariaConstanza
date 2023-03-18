@@ -2,13 +2,15 @@
 $color-medio: rgb(211, 208, 208);
 $color-claro: rgb(236, 234, 234);
 
+/*import*/
 @import "./components/nav";
 @import "./components/footer";
 @import "./components/form";
 
+/*mixin*/
 @mixin size($ancho, $alto) {
-width: $ancho;
-height: $alto;
+    width: $ancho;
+    height: $alto;
 }
 
 @mixin titulo ($fondo, $alineaciontexto, $tamanoletra) {
@@ -32,7 +34,7 @@ body {
         flex-direction: column;
 
         .tituloHome {
-            @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, xx-large )
+            @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, xx-large)
         }
 
         .descripcionHome {
@@ -57,18 +59,6 @@ body {
             width: 100%;
         }
 
-    }
-
-    .tituloTurnos {
-        @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, x-large )
-    }
-
-    table {
-        color: rgb(14, 13, 13);
-    }
-
-    .tituloFormulario {
-        @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, x-large )
     }
 
     .novedades1 {
@@ -98,4 +88,21 @@ body {
         }
 
     }
+
+
+    /*Page Turnos*/
+    .tituloTurnos {
+        @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, x-large)
+    }
+
+    table {
+        color: rgb(14, 13, 13);
+    }
+
+    /*Page Masinformación*/
+    .tituloFormulario {
+        @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, x-large)
+    }
+
+
 }
