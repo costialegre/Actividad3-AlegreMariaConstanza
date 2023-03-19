@@ -47,14 +47,19 @@
             grid-template-rows: 15px 15px 15px;
             row-gap: 5px;
 
-            .mapa {
-                @include size (25px, 25px);
-                transition: 2s;
+            .divMapa {
+                .mapa {
+                    @include size (25px, 25px);
+                    transition: 2s;
+                    margin-top: 20px;
+                    margin-left: 40px;
 
-                &:hover {
-                    transform: scale(6, 6);
+                    &:hover {
+                        transform: scale(6, 6);
+                    }
                 }
             }
+
         }
     }
 }

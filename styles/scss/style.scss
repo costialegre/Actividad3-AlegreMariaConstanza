@@ -34,7 +34,8 @@ body {
         flex-direction: column;
 
         .tituloHome {
-            @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, xx-large)
+            @include titulo(none, center, xx-large);
+            padding-top: 20px;
         }
 
         .descripcionHome {
@@ -46,13 +47,16 @@ body {
             }
         }
 
+        .imagenesHome {
         #fotodesafiohome {
-            padding: 20px;
+                padding: 20px;
         }
-
-        #fotogrupo {
-            @extend #fotodesafiohome;
+    
+            #fotogrupo {
+                @extend #fotodesafiohome;
+            }
         }
+   
 
         .video {
             margin: 20px;
@@ -102,6 +106,11 @@ body {
     /*Page Masinformación*/
     .tituloFormulario {
         @include titulo(linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201)), center, x-large)
+    }
+
+    .descripcionFormulario {
+     text-align: center;
+
     }
 
 
