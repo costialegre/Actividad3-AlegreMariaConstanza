@@ -1,6 +1,6 @@
 /*variables globales*/
 $color-medio: rgb(211, 208, 208);
-$color-claro: rgb(236, 234, 234);
+$color-claro: rgb(244, 243, 243);
 
 /*import*/
 @import "./components/nav";
@@ -29,13 +29,15 @@ body {
     overflow-x: hidden;
 
     .container {
-        font-family: 'Itim', cursive;
+        font-family: 'Roboto Condensed', sans-serif;
         display: flex;
         flex-direction: column;
 
         .tituloHome {
             @include titulo(none, center, xx-large);
             padding-top: 20px;
+            font-family: 'Roboto Condensed', sans-serif;
+
         }
 
         .descripcionHome {
@@ -48,21 +50,23 @@ body {
         }
 
         .imagenesHome {
-        #fotodesafiohome {
-                padding: 20px;
+            #fotodesafiohome {
+       
         }
     
             #fotogrupo {
                 @extend #fotodesafiohome;
             }
+           
         }
-   
-
         .video {
-            margin: 20px;
-            width: 100%;
-        }
+            width: 90%;
+            padding-top: 20px;
+            }
 
+            .padreVideo {
+                text-align: center;
+            }
     }
 
     .novedades1 {
@@ -76,6 +80,9 @@ body {
         position: relative;
         left: 20px;
         color: rgb(9, 9, 9);
+        font-family: 'Roboto Condensed', sans-serif;
+       
+    
 
         @if (lightness($color-claro) <30%) {
             color: white
@@ -112,6 +119,7 @@ body {
      text-align: center;
 
     }
+    
 
 
 }
