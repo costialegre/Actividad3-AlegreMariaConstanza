@@ -56,13 +56,17 @@
     row-gap: 30px;
   }
   .footer {
-    height: auto;
+    height: 100px;
+  }
+  .logos {
+    grid-template-rows: 50px, 50px, 50px;
   }
 }
 form {
   margin: 50px;
   margin-top: 20px;
   color: rgb(7, 7, 7);
+  font-family: "Roboto Condensed", sans-serif;
 }
 form legend {
   background-color: rgb(225, 222, 222);
@@ -131,6 +135,9 @@ body .container .descripcionHome {
 body .container .descripcionHome:hover {
   background-color: rgb(176, 170, 170);
 }
+body .container .imagenesHome #fotodesafiohome, body .container .imagenesHome #fotogrupo {
+  padding: 10px;
+}
 body .container .video {
   width: 90%;
   padding-top: 20px;
@@ -162,6 +169,7 @@ body .tituloTurnos {
   background: linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201));
   text-align: center;
   font-size: x-large;
+  font-family: "Roboto Condensed", sans-serif;
 }
 body table {
   color: rgb(14, 13, 13);
@@ -170,9 +178,100 @@ body .tituloFormulario {
   background: linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201));
   text-align: center;
   font-size: x-large;
+  font-family: "Roboto Condensed", sans-serif;
 }
 body .descripcionFormulario {
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body .tituloDesafios {
+  background: linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201));
+  text-align: center;
+  font-size: x-large;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body .tituloContacto {
+  background: linear-gradient(to top, rgb(238, 237, 237), rgb(204, 201, 201));
+  text-align: center;
+  font-size: x-large;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.descripcionTurnos {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.descripcionContacto {
+  text-align: center;
+  padding-bottom: 100px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.tablaTurnos {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-color: rgb(169, 166, 166);
+}
+.tablaTurnos .tablaTurnoMañana {
+  margin: 40px;
+}
+
+.descripcionTurnos2 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.descripcionDesafios {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-bottom: 40px;
+}
+
+.ContenedorContacto {
+  display: flex;
+  flex-direction: row;
+}
+.ContenedorContacto .section1 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.ContenedorContacto .section1 .instagram, .ContenedorContacto .section1 .footer .contenidoFooter .logos .Facebook, .footer .contenidoFooter .logos .ContenedorContacto .section1 .Facebook, .ContenedorContacto .section1 .footer .contenidoFooter .logos .Twitter, .footer .contenidoFooter .logos .ContenedorContacto .section1 .Twitter {
+  width: 120px;
+  height: 100px;
+  padding-left: 75px;
+}
+.ContenedorContacto .section1 .Facebook {
+  width: 100px;
+  height: 80px;
+  padding-left: 80px;
+}
+.ContenedorContacto .section1 .Twitter {
+  width: 100px;
+  height: 80px;
+  padding-left: 80px;
+}
+.ContenedorContacto .section2 {
+  margin-left: 400px;
+}
+.ContenedorContacto .section2 .fotoContacto {
+  width: auto;
+  height: 400px;
+}
+
+@media (max-width: 480px) {
+  .whatsapp {
+    width: 10px;
+    height: 10px;
+  }
+  .novedades1 {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

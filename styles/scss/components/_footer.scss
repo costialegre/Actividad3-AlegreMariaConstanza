@@ -73,6 +73,14 @@
     }
 
     .footer {
-        height: auto;
+        height: 100px;
     }
+
+.logos {
+    grid-template-rows: 50px, 50px, 50px;
+}
+
+   
+
+   
 }
