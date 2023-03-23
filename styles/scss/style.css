@@ -212,12 +212,10 @@ body .tituloContacto {
   display: flex;
   justify-content: center;
   font-family: "Roboto Condensed", sans-serif;
-  margin-top: 40px;
-  margin-bottom: 40px;
   border-color: rgb(169, 166, 166);
 }
-.tablaTurnos .tablaTurnoMañana {
-  margin: 40px;
+.tablaTurnos .tablaBox {
+  margin: 100px;
 }
 
 .descripcionTurnos2 {
@@ -236,32 +234,33 @@ body .tituloContacto {
   flex-direction: row;
 }
 .ContenedorContacto .section1 {
-  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.ContenedorContacto .section1 .redesContacto {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  width: 600px;
 }
-.ContenedorContacto .section1 .instagram, .ContenedorContacto .section1 .footer .contenidoFooter .logos .Facebook, .footer .contenidoFooter .logos .ContenedorContacto .section1 .Facebook, .ContenedorContacto .section1 .footer .contenidoFooter .logos .Twitter, .footer .contenidoFooter .logos .ContenedorContacto .section1 .Twitter {
-  width: 120px;
+.ContenedorContacto .section1 .redesContacto .instagram, .ContenedorContacto .section1 .redesContacto .footer .contenidoFooter .logos .Facebook, .footer .contenidoFooter .logos .ContenedorContacto .section1 .redesContacto .Facebook, .ContenedorContacto .section1 .redesContacto .footer .contenidoFooter .logos .Twitter, .footer .contenidoFooter .logos .ContenedorContacto .section1 .redesContacto .Twitter {
+  width: 200px;
   height: 100px;
-  padding-left: 75px;
+  padding-left: 70px;
 }
-.ContenedorContacto .section1 .Facebook {
-  width: 100px;
-  height: 80px;
+.ContenedorContacto .section1 .redesContacto .Facebook {
+  width: 180px;
+  height: auto;
   padding-left: 80px;
 }
-.ContenedorContacto .section1 .Twitter {
-  width: 100px;
-  height: 80px;
+.ContenedorContacto .section1 .redesContacto .Twitter {
+  width: 180px;
+  height: auto;
   padding-left: 80px;
 }
-.ContenedorContacto .section2 {
-  margin-left: 400px;
-}
-.ContenedorContacto .section2 .fotoContacto {
+.ContenedorContacto .fotoContacto {
   width: auto;
   height: 400px;
+  padding-left: 300px;
 }
 
 @media (max-width: 480px) {

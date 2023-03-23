@@ -136,7 +136,7 @@ body {
         font-family: 'Roboto Condensed', sans-serif;
     }
 
-   
+
 
 }
 
@@ -155,13 +155,12 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 40px;
-    margin-bottom: 40px;
     border-color: rgb(169, 166, 166);
-    .tablaTurnoMañana {
-        margin: 40px;
+
+    .tablaBox {
+        margin: 100px;
     }
-       }
+}
 
 
 .descripcionTurnos2 {
@@ -181,40 +180,46 @@ body {
     ;
 
     .section1 {
-        width: 200px;
         display: flex;
-        flex-direction: column;
-        row-gap: 30px;
+        flex-direction: row;
+    
+     
+       
+        .redesContacto {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            
+            .instagram {
+                width: 200px;
+                height: 100px;
+                padding-left: 70px;
+    
+            }
+    
+            .Facebook {
+                width: 180px;
+                height: auto;
+                padding-left: 80px;
+            }
+    
+            .Twitter {
+                width: 180px;
+                height: auto;
+                padding-left: 80px;
+            }
+       }
 
-        .instagram {
-            width: 120px;
-            height: 100px;
-            padding-left: 75px;
-        }
-        .Facebook {
-            width: 100px;
-            height: 80px;
-            padding-left: 80px;
-        }
-        .Twitter {
-            width: 100px;
-            height: 80px;
-            padding-left: 80px;
-        }
     }
 
-    .section2 {
-       margin-left: 400px;
-        
-
-    
-        .fotoContacto {
+         .fotoContacto {
             width: auto;
             height: 400px;
+            padding-left: 300px;
         }
     }
 
-}
+
 
 @media (max-width: 480px) {
     .whatsapp {
